@@ -1,0 +1,43 @@
+//PRN: 22070123099
+//EXP.9
+//NAME:SANUSHA MENON
+
+#include<iostream>
+using namespace std;
+
+int main() {
+    int i, j, r1, c1, r2, c2;
+    int ar[r1][c1], t[r2][c2];
+    cout<<"Enter number of rows & column: ";
+    cin>>r1>>c1;
+    for(i=0;i<r1;i++){
+        for(j=0;j<c1;j++){
+            cout<<"Enter element-"<<i+1<<j+1<<":";
+            cin>>ar[i][j];
+        }
+    }
+    r2=c1;
+    c2=r1;
+    for(i=0;i<r2;i++){
+        for(j=0;j<c2;j++){
+            t[i][j]=ar[j][i];
+            cout<<t[i][j]<<"  ";
+        }
+        cout<<endl;
+    }
+}
+/*/OUTPUT
+Enter number of rows & column: 3 3
+Enter element-11:1
+Enter element-12:2
+Enter element-13:3
+Enter element-21:4
+Enter element-22:5
+Enter element-23:6
+Enter element-31:7
+Enter element-32:8
+Enter element-33:9
+1  4  7  
+4  7  8  
+7  8  9 
+/*/
